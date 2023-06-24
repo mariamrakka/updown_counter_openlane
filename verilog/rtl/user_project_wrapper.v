@@ -82,7 +82,7 @@ module user_project_wrapper #(
 /* User project is instantiated  here: input clk, reset,up_down, output[3:0]  counter   */
 /*--------------------------------------*/
 
-mariam_updown_counter UUT1 (
+mariam_updown_counter mariam_updown_counter (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground

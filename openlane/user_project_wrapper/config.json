@@ -4,22 +4,30 @@
         "dir::../../verilog/rtl/defines.v",
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
-    "ROUTING_CORES": 1,
+    "ROUTING_CORES": 2,
     "CLOCK_PERIOD": 25,
-    "CLOCK_PORT": "wb_clk_i",
-    "CLOCK_NET": "mprj.clk",
-    "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 vccd1 vssd1",
+    "CLOCK_PORT": "user_clock2",
+    "CLOCK_NET": "mariam_updown_counter.clk",
+    "FP_PDN_MACRO_HOOKS": "mariam_updown_counter vccd1 vssd1 vccd1 vssd1",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../verilog/rtl/defines.v",
-        "dir::../../verilog/rtl/user_proj_example.v"
+        "dir::../../verilog/rtl/mariam_updown_counter.v"
+
     ],
-    "EXTRA_LEFS": "dir::../../lef/user_proj_example.lef",
-    "EXTRA_GDS_FILES": "dir::../../gds/user_proj_example.gds",
+    "EXTRA_LEFS": 
+    	"/home/mariam/updown_counter_openlane/openlane/mariam_updown_counter/runs/mariam_updown_counter/results/final/lef/mariam_updown_counter.lef",
+    "EXTRA_GDS_FILES": 
+    	"/home/mariam/updown_counter_openlane/openlane/mariam_updown_counter/runs/mariam_updown_counter/results/final/gds/mariam_updown_counter.gds",
+    
+
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,
     "FP_PDN_CHECK_NODES": 0,
+    
+    "PL_TIME_DRIVEN": 0,
+    
     "SYNTH_ELABORATE_ONLY": 1,
     "PL_RANDOM_GLB_PLACEMENT": 1,
     "PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,

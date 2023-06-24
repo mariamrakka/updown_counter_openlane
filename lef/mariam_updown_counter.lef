@@ -1,0 +1,172 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO mariam_updown_counter
+  CLASS BLOCK ;
+  FOREIGN mariam_updown_counter ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 250.000 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 230.560 4.000 231.160 ;
+    END
+  END clk
+  PIN counter[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 124.480 4.000 125.080 ;
+    END
+  END counter[0]
+  PIN counter[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 89.120 4.000 89.720 ;
+    END
+  END counter[1]
+  PIN counter[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 53.760 4.000 54.360 ;
+    END
+  END counter[2]
+  PIN counter[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 18.400 4.000 19.000 ;
+    END
+  END counter[3]
+  PIN io_oeb[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 31.320 100.000 31.920 ;
+    END
+  END io_oeb[0]
+  PIN io_oeb[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 93.200 100.000 93.800 ;
+    END
+  END io_oeb[1]
+  PIN io_oeb[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 155.080 100.000 155.680 ;
+    END
+  END io_oeb[2]
+  PIN io_oeb[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 216.960 100.000 217.560 ;
+    END
+  END io_oeb[3]
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 195.200 4.000 195.800 ;
+    END
+  END reset
+  PIN up_down
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 159.840 4.000 160.440 ;
+    END
+  END up_down
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 15.815 10.640 17.415 236.880 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 38.010 10.640 39.610 236.880 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 60.205 10.640 61.805 236.880 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 82.400 10.640 84.000 236.880 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 26.910 10.640 28.510 236.880 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 49.105 10.640 50.705 236.880 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 71.300 10.640 72.900 236.880 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 93.495 10.640 95.095 236.880 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 94.300 236.725 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 96.070 236.880 ;
+      LAYER met2 ;
+        RECT 7.910 10.695 96.050 236.825 ;
+      LAYER met3 ;
+        RECT 4.000 231.560 96.000 236.805 ;
+        RECT 4.400 230.160 96.000 231.560 ;
+        RECT 4.000 217.960 96.000 230.160 ;
+        RECT 4.000 216.560 95.600 217.960 ;
+        RECT 4.000 196.200 96.000 216.560 ;
+        RECT 4.400 194.800 96.000 196.200 ;
+        RECT 4.000 160.840 96.000 194.800 ;
+        RECT 4.400 159.440 96.000 160.840 ;
+        RECT 4.000 156.080 96.000 159.440 ;
+        RECT 4.000 154.680 95.600 156.080 ;
+        RECT 4.000 125.480 96.000 154.680 ;
+        RECT 4.400 124.080 96.000 125.480 ;
+        RECT 4.000 94.200 96.000 124.080 ;
+        RECT 4.000 92.800 95.600 94.200 ;
+        RECT 4.000 90.120 96.000 92.800 ;
+        RECT 4.400 88.720 96.000 90.120 ;
+        RECT 4.000 54.760 96.000 88.720 ;
+        RECT 4.400 53.360 96.000 54.760 ;
+        RECT 4.000 32.320 96.000 53.360 ;
+        RECT 4.000 30.920 95.600 32.320 ;
+        RECT 4.000 19.400 96.000 30.920 ;
+        RECT 4.400 18.000 96.000 19.400 ;
+        RECT 4.000 10.715 96.000 18.000 ;
+  END
+END mariam_updown_counter
+END LIBRARY
+
